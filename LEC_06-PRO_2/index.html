@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO-2</title>
+</head>
+<body>
+    <!-- 1 character and check whether it is alphabet, digit or special character. -->
+    <script>
+            let cha=parseInt(prompt('that is character'));
+            if((cha>='a' && cha<='z') || (cha>='A' && cha<='Z') ){
+
+                document.write('<h2>this is alphabet <h2>');
+                
+            }else if(cha>='0' && cha<='99'){
+                document.write('<h2> this is digit </h2>');
+                
+            }else{
+                document.write('<h2> this is no special chracter.... </h2>');             
+            }
+    </script>
+        <hr>
+    <!-- 2 check a number is even or odd using ternary operator.-->
+    <script>
+            let ad=parseInt(prompt('First number'));
+            
+             (ad%2 == 0)?document.write('<h2>this num is even '): document.write('<h2>this num is odd ');
+
+    </script>
+    <hr>
+    <!--3 program use switch statement. Display Monday to Sunday. -->
+    <script>
+            ch=(prompt('enter this day '));
+
+            switch(ch){
+
+                case 'm':
+                        document.write('<h2>TODAY IS MONDAY<h2>');
+                        break;
+                case 't':
+                        document.write('<h2>TODAY IS TUESDAY<h2>');
+                        break;
+                case 'w':
+                        document.write('<h2>TODAY IS WEDNESDAY<h2>');
+                        break;   
+                case 'th':
+                        document.write('<h2>TODAY IS THURSDAY<h2>');
+                        break;    
+                case 'F':
+                        document.write('<h2>TODAY IS FRIDAY<h2>');
+                        break; 
+                case 's':
+                        document.write('<h2>TODAY IS SATURDAY<h2>');
+                        break; 
+                case 'su':
+                        document.write('<h2>TODAY IS SUNDAY<h2>');
+                        break;                    
+            }
+    </script>
+    <hr>
+    <!-- 6.  check no is positive, negetive or zero -->
+    <script>
+            let nub=parseInt(prompt('chek this ps & ng'))  
+
+            if(nub>0){
+                document.write('<h2> this number is positive</h2>');
+                
+            }else if(nub<0){
+                document.write('<h2> this number is negetive</h2>');
+                
+            }else{
+                document.write('<h2> this number is zero</h2>');  
+            }
+    </script>
+    <hr>
+    <!--7). check two number is same, or gretter or less -->
+    <script>
+        let sam1=parseInt(prompt('enter this same1'));
+        let sam2=parseInt(prompt('enter this same2'));
+
+        if(sam1>sam2){
+            document.write('<h2> this number is gretterthan</h2>');
+            
+        }else if(sam1<sam2){
+            document.write('<h2> this number is lessthan </h2>');
+            
+        }else{
+            document.write('<h2> this number is same </h2>');
+            
+        }
+        
+    </script>
+    <hr>
+    <!-- 8).  write program to check if salary is -->
+    <script>
+            let salary=parseInt(prompt('Our salary'));
+            if(salary>=1000  && salary<5000){
+                        salary+=1000; //salary = salary+1000
+            }else if(salary>=5000 && salary<10000){
+                        salary+=2000;
+            }else if(salary>=10000 && salary<20000){
+                        salary+=3000;
+            }else if(salary>=20000 && salary<50000){
+                         salary+=4000;
+
+            }else{
+             document.write('<h2> no increment </h2>');
+            }
+            document.write('<h2> final salary '+salary);
+    </script>
+    <hr>
+    <!--5) .  electricity unit charges and calculate total electricity bill according to the given condition:  -->
+
+    <script>
+            let unit=parseInt(prompt('enter your bill'));
+            // let=bill;
+
+            if(unit>=50){
+                bill=unit+0.50;
+   
+            }else if(unit>=51  && unit<=150){
+                bill=25+(unit-50)*0.75;
+            }else if(unit>=151  && unit<=250){
+                bill=75+(unit-100)*1.20;
+            }else {
+                bill=120+(unit-250)*1.50;
+            }
+            sur=bill*20/100;
+            final=sur+bill;
+            
+            document.write('this is your bill'+final);
+            
+    </script>
+    <hr>
+    <!-- 3. WAP program to find out max from 4 numbers using nested if.-->
+    <script>
+        let  s1=parseInt(prompt('first number'));
+        let  s2=parseInt(prompt('first number'));
+        let  s3=parseInt(prompt('first number'));
+        let  s4=parseInt(prompt('first number'));
+
+        if(s1>s2){
+                if(s1>s3){
+                    if(s1>s4){
+                            document.write('<br>s1 is max');
+                            
+                    }else{
+                            document.write('<br>s4 is max');      
+                    }
+                }else{
+                    if(s3>s4){
+                        document.write('<br>s3 is max');
+                        
+                    }else{
+                            document.write('<br>s4 is max');
+                            
+                    }
+                }
+        }else{
+            if(s2>s3){
+                if(s2>s4){
+                    document.write('<br>s2 is max');
+                    
+                }else{
+                        document.write('<br>s4 is max');
+                        
+                }
+            }else{
+                if(s3>s4){
+                        document.write('<br>s3 is max');
+                        
+                }else{
+                        document.write('<br>s4 is max');
+                        
+                }
+            }
+        }
+    </script>
+
+    <!--========== extra nested if ========= -->
+    <script>
+            let nub1=parseInt(prompt('enter your num'));
+            let nub2=parseInt(prompt('enter your num'));
+            let nub3=parseInt(prompt('enter your num'));
+            let nub4=parseInt(prompt('enter your num'));
+            let nub5=parseInt(prompt('enter your num'));
+
+            if(nub1>nub2){
+                if(nub1>nub3){
+                    if(nub1>nub4){
+                        if(nub1>nub5){
+                                document.write('<br>nub1 is max');
+                                
+                        }else{
+                            document.write('<br>nub5 is max');
+                        }
+
+                    }else{
+                        if(nub4>nub5){
+                            document.write('<br>nub4 is max');
+                        }else{
+                            document.write('<br>nub5 is max');
+                        }
+                    }
+                }else{
+                    if(nub3>nub4){
+                        if(nub3>nub5){
+                            document.write('<br>nub3 is max');
+                        }else{
+                            document.write('<br>nub5 is max');
+                        }
+                    }else{
+                       if(nub4>nub5){
+                        document.write('<br>nub4 is max');
+                       } else{
+                        document.write('<br>nub5 is max');
+                       }
+                    }
+
+                }
+
+            }else{
+                if(nub2>nub3){
+                    if(nub2>nub4){
+                        if(nub2>nub5){
+                            document.write('<br>nub2 is max');
+                        }else{
+                            document.write('<br>nub5 is max');
+                        }
+
+                    }else{
+                        if(nub4>nub5){
+                            document.write('<br>nub4 is max');
+                        }else{
+                            document.write('<br>nub5 is max');
+                        }
+                    }
+                }else{
+                    if(nub3>nub4){
+                        if(nub3>nub5){
+                            document.write('<br>nub3 is max');
+                        }else{
+                            document.write('<br>nub5 is max');
+                        }
+                    }else{
+                        if(nub4>nub5){
+                            document.write('<br>nub4 is max');
+                        }else{
+                            document.write('<br>nub5 is max');
+                        }
+                    }
+                }
+            }
+    </script>
+</body>
+</html>
