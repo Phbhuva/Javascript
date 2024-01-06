@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal{
+    height: 624px;
+    width: 375px;
+    background: rgb(26,27,31);
+    background: linear-gradient(90deg, rgba(26,27,31,1) 0%, rgba(23,24,28,1) 100%);
+    border-radius: 20px;
+}
+.darkmod{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #141518;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sun{
+    color: white;
+    font-size: 24px;
+}
+.cal-box{
+    height: 116px;
+    width: 335px;
+    background-color: #141518;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 18%;
+    margin-left: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text1{
+    width: 313px;
+    height: 102px;
+    background-color: #202226;
+    outline: none;
+    border-radius: 10px;
+    border:2px solid #1565C0;
+    font-size: 28px;
+    color: white;
+}
+.cal-ic01{
+display: flex;
+justify-content: space-evenly;
+margin-top: 20px;
+
+}
+.b1{
+    width: 72px;
+    height: 66px;
+    border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, 0.096) 0px 3px 8px;
+    background-color: #141518;
+    font-family: 'Farro', sans-serif;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+.b1-line{
+    border:2px solid #1565C0;
+    color: #1565C0;
+}
+.b2{
+    width: 144px;
+}
+.b3{
+    background-color: #1565C0;
+    color: white;
+}
+.white{
+    background-color: red;
+}

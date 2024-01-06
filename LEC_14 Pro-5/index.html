@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO-5</title>
+</head>
+<body>
+    <script>
+        let a=[10,20,30,40,50,60,70]
+        function sumArray(arry){
+            let sum =0;
+            for(let i=0; i<arry.length; i++){
+
+                sum +=arry[i];
+            }
+            return sum;
+        }
+       
+            let totalSum= sumArray(a);
+
+            document.write('<br> this is all array '+totalSum);
+
+            document.write('<br> this is array '+a);
+            
+
+ 
+
+
+    </script>
+    <hr>
+    <script>
+           //  2. Var data=[10,20,30,40,50,60]
+    //   WAP to print all record using forEach loop 
+
+    let data = [10, 20, 30, 40, 50, 60];
+
+    data.forEach(function(element) {
+        document.write('<br> this is deta is '+element);
+        
+    });
+    </script>
+    <hr>
+    <script>
+    //   3. Convert Above program Array to string.
+    // WAP to find that function and implements in program.
+
+    let b=["mango","apple","banana","guava"];
+        document.write('<br>shorted array is '+b.toString());
+       
+
+        
+    </script><hr>
+    <script>
+        // 4. WAP to IndexOf function, Shift and unshift function
+        let ab=[12,28,34,45,53];
+          
+        document.write('<br> this is indexof '+ab.indexOf(34));
+        
+        ab.shift();
+        for(let i=0;i<ab.length;i++){
+            document.write('<br><hr><br> this is array '+ab[i]);   
+        }
+        ab.unshift(35000);
+        for(let i=0;i<ab.length;i++){
+            document.write('<br><hr><br> this is array '+ab[i]);   
+        }
+        
+    </script><hr>
+    <script>
+        // 5. WAP to print all above record in descending order using function.
+        let arr = [43,45,32,12,3,55]
+
+        document.write('Descending order'+arr.sort(function(a,b){
+            return b-a;
+        }));
+        
+
+
+        
+    </script>
+</body>
+</html>

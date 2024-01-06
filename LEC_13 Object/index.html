@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+    <script>
+        let user ={
+            name : 'harsh',
+            id :'bhuvaharshpatel7915@gmail.com',
+            salary : 25000,
+            age:20,
+            lname:'bhuva',
+            fullname:function(){
+                
+                return this.name ;this.lname
+            },
+            get userage(){
+                return this.age
+            },
+            set userage(newsa){
+                this.age=newsa
+            }
+        }
+        user.lastname='bhuva'
+        document.write('<br> that is user '+user.id);
+
+        for(let h in user){
+            document.write('<br>'+h+'_is___'+user[h]);
+            
+        }
+        document.write('<br> this is user full name '+user.fullname());
+        
+        document.write('<br> this is user age '+user.userage);
+
+        user.userage=24
+        document.write('<br>___'+user.age);
+        
+        
+    </script>
+</body>
+</html>

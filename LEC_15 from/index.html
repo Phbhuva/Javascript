@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+        <form action="#" name="from" onsubmit=" return date()">
+            <label for="#">Name :</label>
+            <input type="text" name="name " id="name ">
+            <p class="error" id="error"></p>
+            <input type="submit" value="save" id="save">
+            <input type="reset" value="clear" id="clear">
+        </form>
+        <script>
+            function date(e){
+              if(name == " "){
+                document.getElementById('error').innerHTML='enter your name ..';
+                return false
+              } if(name.length<2 || name.length>20){
+                document.getElementById('error').innerHTML='vailed your name....';
+                return false
+              }
+            }
+        </script>
+</body>
+</html>

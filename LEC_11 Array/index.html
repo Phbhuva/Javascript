@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+        let a=[10,20,30,40];
+
+        for( let i=0;i<a.length;i++){
+            document.write('<br><br> this is array '+a[i]);
+            
+        }
+        // push and pop ma last thi number add delete thase //
+        a.push(50);
+
+        document.write('<h2>This function will add a number=> push</h2>');
+        
+        for( let i=0;i<a.length;i++){
+            document.write('<br><br> this is array '+a[i]);   
+        }
+        a.pop();
+        document.write('<h2> In this function a number will be left behind =>  pop</h2>');
+        
+        for(let i=0;i<a.length;i++){
+            document.write('<br><br> this is array '+a[i]);
+            
+        }
+        // unshift ma aagad thi add thase and shift ma aagadthi delete thase //
+        a.unshift(215);
+        
+        document.write('<h2> In this function, the number is added from the front => unshift</h2>');
+
+        for(let i=0;i<a.length;i++){
+            document.write('<br><br> this is array '+a[i]);
+            
+        }
+        a.shift();
+        document.write('<h2> This function will output a number from the front => shift</h2>');
+        for(let i=0;i<a.length;i++){
+            document.write('<br><br> this is array '+a[i]);
+
+        }   
+            //This function works for both addition and subtraction// 
+        a.splice(2,1,200,512);
+        document.write('<h2> This function works for both addition and subtraction => splice</h2>');
+
+            for(let i=0;i<a.length;i++){
+                document.write('<br><br>this is array '+a[i]);
+                
+            }
+       
+
+    </script>
+    
+</body>
+</html>

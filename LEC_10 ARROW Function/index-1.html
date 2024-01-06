@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        let a=20;
+        const jk = ()=> a*a*a;
+
+        document.getElementById('demo').innerHTML='this is mult '+jk();
+    </script><hr><br>
+    <div id="demo2"></div>
+    <hr>
+    <script>
+        const ck = (j) => {
+            let b=30;
+            document.write('<br> this is addition '+(j+b+b));  
+        }
+        ck(50)
+    </script><hr>
+    <script>
+        const pg = () => {
+            let nb=180;
+            return nb/nb/nb;
+        }
+        document.getElementById('demo2').innerHTML='this is division '+pg()
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF</title>
+</head>
+<body>
+    <div id="demo2"></div>
+    <table>
+        <h1>Online Calculator</h1>
+        <tr>
+          <td>Enter a first number : </td>
+          <td><input type="text" id="firstNumber"/></td>
+        </tr>
+        <tr>
+          <td>Enter a second number : </td>
+          <td><input type="text" id="secondNumber"/></td>
+        </tr>
+      </table>
+      <br/>
+
+      <button onclick="add()">Add</button>
+
+      <button onclick="sub()">Substract</button>
+
+      <button onclick="mul()">Multiply</button>
+
+      <button onclick="div()">Divide</button><br/>
+
+      <p id="result">Result</p>
+    <script>
+
+ function getValue(firstNumber, secondNumber){
+        x = document.getElementById("firstNumber").value;
+        y = document.getElementById("secondNumber").value;
+    }
+
+    function add() {
+
+        getValue();
+
+        sum=Number(x)+Number(y);
+
+        document.getElementById("result").innerHTML =  x+" + "+y+" = "+sum;
+    }
+
+    function sub() {
+        
+        getValue();
+        
+        sub=Number(x)-Number(y);
+     
+        document.getElementById("result").innerHTML = x+" - "+y+" = "+sub;
+    }
+    
+    function mul() {
+        
+        getValue();
+       
+        mul=Number(x)*Number(y);
+        
+        document.getElementById("result").innerHTML = x+" * "+y+" = "+mul;
+    }
+    
+    function div() {
+       
+        getValue();
+
+        div=Number(x)/Number(y);
+       
+        document.getElementById("result").innerHTML = x+" / "+y+" = "+div;
+    }
+    </script><br>
+    <hr>
+    <script>
+            // 2. WAP to find Area using rectanlge, Triangle, circle functions.//
+
+            // 1 : rectanlge ->
+
+            let a=parseInt(prompt('Enter the length of the rectanlge '));
+            let b=parseInt(prompt('Enter the breadth of the rectanlge '));
+
+            document.write('<br>this is rectanlge area '+(a*b));
+            
+            // 2 : triangle ->
+            
+            let c=parseInt(prompt('enter the first number '))
+            let d=parseInt(prompt('enter the first number '))
+            let e=parseInt(prompt('enter the first number '))
+
+            let ac=(c+d+e)/2;
+            document.write('<br>triangle addition '+ac);
+
+            let areaValue = Math.sqrt(ac * (ac - c) * (ac - d) * (ac - e));
+            
+            document.write('<br> this is Triangle area '+areaValue);
+            
+            // 3 : circle ->
+            let cr=parseInt(prompt('enter the circle number '))
+            let area=3.141*cr*cr;
+
+            document.write('<br> this is cricle area '+area);
+            
+    </script><hr><br>
+    <!-- 3. WAP to find converter -->
+    <script>
+            // 1. for meter to foot 
+        let me=parseInt(prompt('enter the meter '));
+
+        let fo=me*3.28084;
+
+        document.write('<br> convart for meter to foot '+fo);
+        
+        //    2. for Celsius to Fahrenheit //
+        let ce=parseInt(prompt('Enter a celsius value'));
+
+        document.write('<br>this is Celsius'+ce);
+        
+        let fa=(ce*9/5)+32;
+
+        document.write('<br><br>this is to for Celsius to Fahrenheit '+fa);
+        
+        //    3. for Dollar to Rupees //
+
+        let dol=parseInt(prompt('enter this doller'))
+
+        let r=dol*83;
+
+        document.write('<br> for Dollar to Rupees '+r);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="td">firstNumber :</td>
+            <td class="td"><input type="text" id="firstNumber"></td>
+        </tr>
+        <tr>
+            <tr>
+                <td class="td">secondNumber :</td>
+                <td class="td"><input type="text" id="secondNumber"></td>
+            </tr> 
+        </tr>
+    </table>
+    <br>
+    <div class="btn">
+        <button class="button-71" role="button" onclick="add()">Additions</button>
+
+        <button class="button-71" role="button"  onclick="sub()">Substract</button>
+
+        <button class="button-71" role="button"  onclick="mult()">Multiply</button>
+
+        <button class="button-71" role="button"  onclick="div()">Divide</button>
+
+    </div>
+        <p id="result" class="re">Result</p>
+    <script>
+        
+        function getvelue( firstNumber, secondNumber){
+            a = document.getElementById('firstNumber').value;
+            b = document.getElementById('secondNumber').value;
+        }
+
+        function add(){
+
+            getvelue();
+
+            sum=Number(a)+Number(b);
+
+            document.getElementById("result").innerHTML =  a+" + "+b+" = "+sum;
+
+        }
+
+        function sub(){
+
+            getvelue();
+
+            sum=Number(a)-Number(b);
+
+            document.getElementById("result").innerHTML =  a+" - "+b+" = "+sum;
+
+        }
+        function mult(){
+
+        getvelue();
+
+        sum=Number(a)*Number(b);
+
+        document.getElementById("result").innerHTML =  a+" * "+b+" = "+sum;
+
+        }
+        function div(){
+
+        getvelue();
+
+        sum=Number(a)/Number(b);
+
+        document.getElementById("result").innerHTML =  a+" / "+b+" = "+sum;
+
+        }
+    </script>
+    <br><hr>
+    <table>
+        <h1> Rectanlge</h1>
+        <tr>
+            <td>Enter the length of the rectanlge  :</td>
+            <td><input type="text" id="length"></td>
+           
+        </tr>
+        <tr>
+            <td>Enter the length of the rectanlge  :</td>
+            <td><input type="text" id="length1"></td>
+        </tr>
+    </table>
+    <br>
+         <button class="button-71" role="button"  onclick="ad()">Rectanlge</button>
+    <p id="Multiply" class="re">Result</p>
+    <script>
+        function jk( length, length1){
+            ab = document.getElementById('length').value;
+            ac = document.getElementById('length1').value;
+        }
+
+        function ad(){
+            jk();
+
+            mg=Number(ab)*Number(ac);
+        
+            document.getElementById('Multiply').innerHTML =  ab+" * "+ac+" = "+mg;
+
+        }
+
+    </script><br><hr>
+
+    <table>
+        <h1>triangle</h1>
+        <tr>
+            <td>Enter the length of the triangle :</td>
+            <td><input type="text" id="t1"></td>
+           
+        </tr>
+        <tr>
+            <td>Enter the length of the triangle  :</td>
+            <td><input type="text" id="t2"></td>
+        </tr>
+        <tr>
+            <td>Enter the length of the triangle  :</td>
+            <td><input type="text" id="t3"></td>
+        </tr>
+    </table>
+    <br>
+         <button class="button-71" role="button"  onclick="cb()">Rectanlge</button>
+         <p id="rg" class="re">Result</p>
+
+         <script>
+                function cv(t1 , t2 ,t3){
+                    q = document.getElementById('t1').value;
+                    w = document.getElementById('t2').value;
+                    e = document.getElementById('t3').value;
+
+                }
+                let cn=(q+w+e)/2;
+                
+                function cb(){
+
+                   let areaValue = Math.sqrt(cn * (cn - q) * (cn - w) * (cn - e));
+
+                  document.getElementById('rg').innerHTML =  q+"*/"+w+"*/"+e+""+areaValue;
+
+                }
+         </script>
+</body>
+</html>
