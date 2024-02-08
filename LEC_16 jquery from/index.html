@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery from</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+   
+</head>
+<body>
+    <form id="first_form" method="post" action="">  
+        <div>  
+          <label for="first_name"> Enter First Name: </label>  
+          <input type="text" id="first_name" name="first_name"></input>  <br><br>
+        </div>  
+        <div>  
+          <label for="last_name"> Enter Last Name: </label>  
+          <input type="text" id="last_name" name="last_name"></input> <br><br> 
+        </div>  
+        <div>  
+         <label for="last_name"> Enter Number: </label>  
+        <input type="text"  id="number" name="number">  <br><br>
+        </div>  
+        <div>  
+          <label for="email"> Enter Email: </label>  
+          <input type="email" id="email" name="email"></input>  <br><br>
+        </div>  
+        
+        <div>  
+          <label for="password"> Enter Password: </label>  
+          <input type="password" id="password" name="password"></input><br><br>  
+        </div>  
+        <div>  
+          <label for="password"> Confirm Password: </label>  
+          <input type="password" id="password" name="password"></input>  <br><br>
+        </div>  
+        <div>  
+          <input type="submit" value="Submit" />  
+        </div>  
+      </form>  
+       
+</body>
+<script>
+       $('form[id="first_form"]').validate({  
+    rules: {  
+        first_name: 'required',  
+        last_name: 'required',  
+        email: {  
+        required: true,  
+        email: true,  
+      },  
+      password: {  
+        required: true,  
+        minlength: 8,  
+      },
+      number:  {
+        required: true,  
+        minlength: 10, 
+      }
+
+    },  
+    messages: {  
+        number:'NUmber is required',
+        first_name: 'This field is required',  
+        last_name: 'This field is required',  
+        email: 'Enter a valid email',  
+        password: {  
+        minlength: 'Password must be at least 8 characters long'  
+      }  
+    },  
+  });  
+
+
+</script>
+</html>

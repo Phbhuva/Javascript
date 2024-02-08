@@ -1,0 +1,29 @@
+body{
+    background: rgb(8,0,28);
+    background: radial-gradient(circle, rgba(8,0,28,1) 0%, rgba(7,19,38,1) 100%);
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+p {
+    padding: 0 50px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Black Ops One', system-ui;
+}
+
+.border {
+    height: 300px;
+    width: 300px;
+    background: rgb(7,29,43);
+    background: radial-gradient(circle, rgba(7,29,43,1) 0%, rgba(6,38,48,1) 100%);
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.224) 0px 3px 8px;
+}
