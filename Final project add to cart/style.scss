@@ -1,0 +1,345 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin subtitle($f, $w){
+    font-size: $f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: $w;
+}
+@mixin title($w){
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: $w;
+}
+@mixin heding($h){
+    font-size: $h;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+@mixin btn{
+    height: 50px;
+    width: 152px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+
+
+}
+
+.nv-bg{
+    background-color: #EFEFEF ;
+    .nav-text1{
+        @include subtitle(18px,800);
+    }
+    .nav-link{
+        @include subtitle(16px,800);
+        color: black;   
+    }
+    .homep{
+        text-decoration: underline;
+    }
+        .navbar-toggler{
+            height: 40px !important;
+            width: 40px !important;
+            border-radius: 5px !important;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+            border: none !important;
+        }
+        .btn-01{
+            @include btn();
+            text-decoration: none;
+            text-align: center;
+            padding-top: 10px;
+            color: black;
+        }
+}
+// ========== banner ========= //
+.carousel-caption{
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    left: 10% !important;
+    text-align: start !important;
+    padding-top: 2% !important;
+
+    .ban-text1{
+        @include title(700);
+        color: #656565;
+    }
+    .ban-text2{
+        @include heding(72px);
+        color: black;
+        margin-bottom: 0px!important;
+        margin-top: 0px!important;
+    }
+    .ban-text3{
+        display: block;
+        
+    }
+    .ban-tex4{
+        @include title(600);
+        color: #656565;
+        margin-top: 0px!important;
+    }
+    .ban-btn{
+        @include btn();
+    }
+}
+// =====================OUR SPECIAL FEATURES ======== //
+.sp-text1{
+    @include heding(40px);
+    padding-top: 80px !important;
+}
+.s-4{
+    border-radius: 10px;
+}
+.sp-text2{
+    @include subtitle(18px,600);
+    color: #656565;
+}
+// ========== Categories =============//
+.ca-text2{
+    @include heding(40px);
+    padding-top: 64px;  
+}
+.ca-text1{
+    @include subtitle(18px,700);
+}
+.ca{
+    margin-top: 30px !important;
+}
+// =========== New Arrivals ==========//
+.ne-text1{
+    @include heding(40px);
+    padding-top: 64px;
+}
+.ne-text2{
+    @include subtitle(14px,bold);
+    margin-bottom:0px !important;
+    text-transform: uppercase;
+}
+.st{
+    font-size: 12px;
+}
+.ne-text3{
+   @include subtitle(14px,bold);
+   margin-top: 0px !important;
+}
+.cart1{
+    height: 30px;
+    width: 30px;
+    background-color: #afafaf52;
+    border-radius: 8px;
+}
+.ne-text-all{
+    @include subtitle(18px,500);
+    text-decoration: none !important;
+}
+.nav-item{
+    a{
+        text-decoration: none !important;
+    }
+}
+// ==============//
+.sp-text1{
+    @include heding(45px);
+    padding-top: 20%;
+}
+.sp-text02{
+    @include subtitle(15px,none);
+    .sp-text3{
+        display: block;
+    }
+}
+.sp-btn{
+    @include btn();
+    background-color: #ffff;
+}
+.s-img{
+    margin-top: 80px;
+}
+// ======= offer =======//
+.of-bg{
+    width: 100%;
+    background-color: #EAECE9;
+    margin-top: 80px;
+    .of-text2{
+        @include heding(45px);
+        text-transform: uppercase;
+        padding-top: 80px;
+        .of-text3{
+            display: block;
+        }
+    }
+  
+    .of-btn{
+        @include btn();
+        background-color: black;
+        color: white;
+        margin-bottom: 80px;
+    }
+    .o-f{
+        margin: 60px 0px 60px 0px ;
+    }
+}
+// =========== cms banner ========//
+@mixin of-btn{
+    width: 115px;
+    height: 40px;
+    background-color: #eaece99c;
+    border-radius: 0px 5px 0px 0px;
+    border: none;
+    @include subtitle(15px,700 );
+    
+}
+.cm-main{
+    margin-top: 80px;
+
+    .of-btn{
+        @include of-btn();
+        right: 10px;
+        top: 10px;
+       
+    }
+}
+// ================//
+.customer{
+    .card{
+        border: none !important;
+        background-color: #EFEBEA !important;
+        .cu-text2{
+            @include subtitle(18px,600 );
+            padding-top: 30px;
+    
+        }
+        .cu-text3{
+            @include subtitle(15px,none);
+            width: 300px;
+        }
+        .cu-img1{
+            height: 80px;
+            width: 80px;
+            margin-bottom: 10px
+        }
+        .cu-text5{
+            @include subtitle(15px, none);
+            margin-bottom: 0px !important;
+        }
+        .cu-text6{
+            @include subtitle(15px, none);
+            margin-bottom: 0px !important;
+            color: #4F4F4F;
+        }
+    }
+}
+// =========  our blog ==== //
+.main-blog{
+    .card{
+        border: none !important;
+        .bof{
+            height: 85px;
+            width: 85px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.772);
+
+            .b-text2{
+                @include title(700);
+                margin-bottom: 0px !important;
+                text-decoration: underline;
+            }
+            .b-text3{
+                @include title(700);
+                margin-top: -10px !important;
+                margin-bottom: 0px !important;
+
+            }
+        }
+    }
+    .b-text4{
+        @include subtitle(16px,700 );
+        color: #AFAFAF;
+        margin-bottom: 0px !important;
+    }
+    .b-text5{
+        @include subtitle(20px ,700);
+        &::after{
+            content: "";
+            display: block;
+            border-bottom: 2px solid black;
+            width: 100px;
+            margin-left: 38%;
+            margin-top: 10px;
+        }
+    }
+    .b-text6{
+        @include subtitle(15px,none );
+        color: #5A5A5A;
+    }
+}
+// ======== logo ====== //
+.logo-1{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+// ========= footer =====//
+.main-footer{
+    background-color: #EFEBEA;
+    width: 100%;
+    margin-top: 80px;
+    .f-log{
+        margin-top: 80px;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+    .f-text1{
+        @include subtitle(24px,700);
+        margin-bottom:0px !important;        
+    }
+    .f-text2{
+        @include subtitle(14px,none );
+        margin-top:0px !important;
+        margin-bottom: 40px;
+    }
+    .f-text3{
+        @include subtitle(20px,700);
+        margin-top: 80px;
+    }
+    .f-text4{
+        @include subtitle(14px ,none);
+        color: #838383;
+    }
+    .f-text5{
+        margin-bottom: 40px ;
+    }
+}
+// ======= product ====//
+.so-bn{
+    opacity: 0.5;
+}
+.ca-text1{
+    @include subtitle(30px,none);
+    padding-top: 80px;
+    cursor: pointer;
+}
+th{
+    @include subtitle(30px,none);
+    font-size: 30px !important;
+}
+.ca-text3{
+    @include subtitle(24px,none);
+
+}
+.ca-text4{
+    @include subtitle(20px,none);
+    color: #555;
+}
+.ca-btn{
+    @include btn();
+}
+.ca-btn2{
+    width: 210px;
+    margin-left: 28%;
+}
