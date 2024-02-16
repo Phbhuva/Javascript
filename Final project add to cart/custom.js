@@ -38,9 +38,9 @@ const dispcat = () =>{
                                 </div>
                                 <div class="cart d-flex justify-content-between align-items-besline mt-2">
                                     <p class="ne-text3">${p.price}</p>
-                                        <div class="cart1 d-flex justify-content-center align-items-center">
+                                        <button class="cart1 d-flex justify-content-center align-items-center" onclick='addToCart(${p.id})'>
                                                 <i class="fa-solid fa-cart-shopping"></i>
-                                        </div>
+                                        </button>
                                 </div>
                         </div>`
      
@@ -55,4 +55,43 @@ const dispcat = () =>{
     document.getElementById('allcat').innerHTML = tr;  
     document.getElementById("productlist").innerHTML= pr;
 };
+let cartData = [];
+const addToCart = (id) => {
+    let productData = JSON.parse(localStorage.getItem("prodInfo"));
+    let cart = JSON.parse(localStorage.getItem("cartDetail"));
+    let len = cart != null ? cart.length + 1 : 1;
+    let info = {}
+    let qty = 1;
+
+    productData.forEach(i => {
+        if (i.id == id) {
+            info.id = len;
+            info.name = i.name;
+            info.price = i.price;
+            info.cid = i.cid;
+            info.pid = id;
+            info.image = i.image;
+            info.qty = qty;
+        }
+    });
+    if (cart != null) {
+        let dt = cart.filter((i) => {
+            return i.pid == id
+        });
+        if(dt.length>0){
+            cart.forEach((i)=>{
+                if(i.pid==id){
+                    i.qty=i.qty+1;
+                }
+            });
+        } else{
+            cart.push(info);
+        }
+        localStorage.setItem( "cartDetail", JSON.stringify(cart));
+    } else {
+        cartData.push(info);
+        localStorage.setItem( "cartDetail", JSON.stringify(cartData));
+
+    }
+}
 dispcat();

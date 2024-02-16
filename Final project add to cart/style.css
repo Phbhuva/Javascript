@@ -148,6 +148,7 @@
   width: 30px;
   background-color: rgba(175, 175, 175, 0.3215686275);
   border-radius: 8px;
+  border: none;
 }
 
 .ne-text-all {
@@ -366,6 +367,9 @@
 }
 .main-footer .f-text5 {
   margin-bottom: 40px;
+}
+.main-footer .f-text6 {
+  margin-top: 40px !important;
 }
 
 .so-bn {

@@ -133,6 +133,7 @@
     width: 30px;
     background-color: #afafaf52;
     border-radius: 8px;
+    border: none;
 }
 .ne-text-all{
     @include subtitle(18px,500);
@@ -313,6 +314,9 @@
     }
     .f-text5{
         margin-bottom: 40px ;
+    }
+    .f-text6{
+        margin-top: 40px !important;
     }
 }
 // ======= product ====//
